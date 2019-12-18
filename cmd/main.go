@@ -57,6 +57,10 @@ func main() {
 		os.Exit(1)
 	}
 
-	fmt.Println("invasion completed, remaining cities with outbound links:")
-	fmt.Println(encoding.Encode(worldMap))
+	s := "invasion completed"
+	w := encoding.Encode(worldMap)
+	if len(w) > 0 {
+		s = fmt.Sprintf("%s, state of the world:\n%s", s, w)
+	}
+	fmt.Println(s)
 }
