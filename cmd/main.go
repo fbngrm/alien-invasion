@@ -10,7 +10,7 @@ import (
 )
 
 var (
-	version = "unknown"
+	version = "unknown" // will be compiled into the binary, see Makefile
 
 	inFile       string
 	numAliens    int
@@ -52,6 +52,7 @@ func main() {
 		os.Exit(1)
 	}
 
+	// execute the main loop of the invasion
 	if err := invasion.New(worldMap, numAliens).Iterate(); err != nil {
 		fmt.Println(err)
 		os.Exit(1)
