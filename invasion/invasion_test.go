@@ -9,8 +9,8 @@ import (
 
 var moveTests = []struct {
 	d string    // description of test case
-	i *Invasion // state before fights
-	r *Invasion // expected state after fights
+	i *Invasion // state before moves
+	r *Invasion // expected state after moves
 }{
 	{
 		d: "expect alien to be trapped and removed from counter",
