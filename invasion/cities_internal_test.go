@@ -16,7 +16,7 @@ var invadedCitiesTests = []struct {
 		c: []string{"Foo", "Bar", "Baz", "Qu-ux"},
 	},
 	{
-		d: "expect one",
+		d: "expect one alien to be added",
 		a: []string{"alien 1"},
 		c: []string{"Foo", "Bar", "Baz", "Qu-ux"},
 	},
