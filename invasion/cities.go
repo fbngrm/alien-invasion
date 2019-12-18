@@ -14,9 +14,9 @@ func initInvadedCities(names alienNames, cityNames []string) invadedCities {
 	invaded := make(invadedCities)
 	for _, alienName := range names {
 
-		// shuffle, potentially expensive for large slices
+		// shuffle, potentially expensive for large slices.
 		// todo: use random index or something more efficient
-		// and an interface to make it easier testable
+		// and an interface to make test order deteministic.
 		for i := range cityNames {
 			j := rand.Intn(i + 1)
 			cityNames[i], cityNames[j] = cityNames[j], cityNames[i]

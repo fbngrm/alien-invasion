@@ -6,7 +6,7 @@ import (
 
 var invadedCitiesTests = []struct {
 	d string   // description of test case
-	a []string // aliens names
+	a []string // alien names
 	c []string // city names
 
 }{
@@ -62,6 +62,7 @@ func TestInitInvadedCities(t *testing.T) {
 	}
 }
 
+// helper to check if e is contained by s.
 func contains(s []string, e string) bool {
 	for _, a := range s {
 		if a == e {

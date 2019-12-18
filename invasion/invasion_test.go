@@ -32,7 +32,7 @@ var moveTests = []struct {
 		},
 	},
 	{
-		d: "expect alien to be trapped and removed from counter",
+		d: "expect aliens to be trapped and removed from counter",
 		i: &Invasion{
 			worldMap:   world.Map{"Foo": {}},
 			alienMoves: alienMoves{"alien 1": maxMoves - 1},
