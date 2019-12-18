@@ -31,7 +31,4 @@ _testmain.go
 coverage.html
 
 # Applications
-cmd/gateway/gateway
-server/server
-server/main
-secrets/
+bin/
