@@ -103,15 +103,15 @@ func (i Invasion) move() bool {
 	return false
 }
 
-// fight executes fights and desrtoys all cities invaded by maxInvaders aliens.
+// fight executes fights and desrtoys all cities invaded by `maxInvaders` aliens.
 func (i Invasion) fight() {
 	for cityName, alienNames := range i.invadedCities {
 		if len(alienNames) != MaxInvaders { // no fight
 			return
 		}
 
-		// remove the destroyed city from the world
-		// map which removes the aliens as well.
+		// remove the destroyed city from the world map and the invaded
+		// cities index which removes the aliens as well.
 		i.worldMap.DestroyCity(cityName)
 		delete(i.invadedCities, cityName)
 
