@@ -6,6 +6,7 @@ import (
 	"github.com/fgrimme/alien-invasion/world"
 )
 
+// Encode encodes m into a string representation.
 func Encode(m world.Map) string {
 	var s string
 	for cityName, links := range m {
@@ -20,4 +21,3 @@ func Encode(m world.Map) string {
 	}
 	return s
 }
-

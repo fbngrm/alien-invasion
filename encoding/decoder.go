@@ -9,6 +9,7 @@ import (
 	"github.com/fgrimme/alien-invasion/world"
 )
 
+// Decode decodes the content of r into a world.Map
 func Decode(r io.Reader) (world.Map, error) {
 	world := make(world.Map)
 	scanner := bufio.NewScanner(r)
