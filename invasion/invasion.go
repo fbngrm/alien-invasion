@@ -35,7 +35,7 @@ func (i *Invasion) Iterate() error {
 		return nil
 	}
 	if !i.move() {
-		return errors.New("unable to move aliens")
+		return errors.New("all aliens trapped")
 	}
 	if i.peace() {
 		return nil
