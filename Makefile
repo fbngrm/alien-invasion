@@ -1,4 +1,4 @@
-.PHONY: build run test test-cover lint
+.PHONY: build test test-cover lint
 
 build:
 	@mkdir -p bin
