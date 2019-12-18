@@ -7,7 +7,7 @@ This program implements the requirements defined in the [task description](https
 We assume that links between cities are uni-directional, even though most
 real-life roads are bi-directional. This assumption is based on the fact that
 in the given example, `Foo` declares a link to `Bar` as well as the other way
-around so we support this distinction.
+around.
 
 Meaning, if aliens can travel from city `Foo` to city `Bar` directly, they
 do not necessarily be able to travel from `Bar` to `Foo` directly.
@@ -22,11 +22,11 @@ cities with no links cannot be represented. Thus, when initializing the invasion
 isolated cities with no links are ignored by the invaders.
 Cities with inbound connections only, may get invaded or destroyed. In
 any case they can, by format definition, only be present in the output as
-links from other cities. Aliens can get trapped in a city with inbound links only.
+links from other cities. Aliens can get trapped only in a city with inbound only links.
 
 We assume that the program is executed with no more than `maxInvaders (default=2)`
 aliens of the number of cities in the map.
-The program programs supports any `maxInvader` value > 0.
+The program supports any `maxInvader` value > 0.
 
 ### Requirements
 
