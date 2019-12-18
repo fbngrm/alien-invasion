@@ -53,6 +53,9 @@ func (i Invasion) peace() bool {
 }
 
 // move moves one alien at a time. If no alien can be moved, false is returned.
+// The criteria for moving is that a neighboring city is reachable via an inbound
+// link from the currently invaded city and that the city is not invaded by more
+// than `maxInvaders` aliens.
 func (i Invasion) move() bool {
 	for current, aliens := range i.invadedCities {
 		linkedCities := i.worldMap[current]
