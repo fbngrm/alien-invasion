@@ -89,7 +89,7 @@ func (i Invasion) move() bool {
 				}
 				// if the alien reached the max move counter threshold, stop
 				// counting by just removing it from the moves counter index.
-				// note, this does not mean that is trapped.
+				// note, this does not mean that it is trapped.
 				if i.alienMoves[alienName] == maxMoves {
 					delete(i.alienMoves, alienName)
 				}
